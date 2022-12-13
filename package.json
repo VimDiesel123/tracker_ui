@@ -11,7 +11,9 @@
     "#compile": "Generates JS bundles for production. Use with start.",
     "compile": "webpack --mode production",
     "#watch-server-hmr": "Recompile server HMR bundle on changes.",
-    "watch-server-hmr": "webpack -w --config webpack.serverHMR.js"
+    "watch-server-hmr": "webpack -w --config webpack.serverHMR.js",
+
+    "heroku-postbuild": "npm run compile && ln -fs ../node_modules/bootstrap/dist public/bootstrap"
   },
   "author": "David Smith",
   "license": "ISC",
