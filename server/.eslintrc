@@ -1,0 +1,13 @@
+{
+  "env": {
+    "node": true
+  },
+  "rules": {
+    "linebreak-style": [
+            "error",
+            "windows"
+        ],
+    "no-console": "off",
+    "import/extensions": "off"
+  }
+}
